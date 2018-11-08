@@ -1,13 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 /* reverse: reverse string s in place */
 
 
 int main()
 {
-    void reverse (char s[])
+
+
+
+
+    printf("Enter a string text below: ");
+    char data[25];
+
+    gets(data);
+
+
+    reverse(data);
+
+    return 0;
+}
+void reverse (char s[])
     {
         int c, i, j;
 
@@ -16,11 +31,6 @@ int main()
              s[i] = s[j];
              s[j] = c;
     }
+    printf("%s",s);
 
-
-}
-    printf("Enter a string text below: ");
-
-//copy out of book page
-    return 0;
-}
+    }
